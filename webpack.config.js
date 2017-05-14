@@ -3,6 +3,7 @@
  const HtmlWebPlugin = require("html-webpack-plugin");
  const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+
  module.exports = {
  	entry: "./src/app.js",
  	output: {
@@ -28,7 +29,11 @@
         fallback: "style-loader",
         use: ['css-loader', 'sass-loader'],
       }) 
-    }
+    },
+    // {
+    //   test:/\.jpg$/,
+    //   use: 'file-loader'
+    // }
  		]
         
  	},
