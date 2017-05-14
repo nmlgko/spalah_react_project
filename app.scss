@@ -1,0 +1,102 @@
+body{
+
+background: lightBlue;
+
+}
+
+h1{
+	text-align: center;
+}
+.header{
+	border-bottom: 1px solid #000;
+	padding: 20px;
+	/*background-image: url('./img/the-simpsons.jpg');*/
+	.clock{
+		text-align: center;
+	}
+
+}
+.mainMenu{
+	text-align: center;
+	a{
+		text-decoration: none;
+		color: #fff;
+		display: inline-block;
+		margin: 10px;
+		font-size: 20px;
+		transition:all 500ms linear;
+		&:hover{
+			color: #000;
+		}
+	}
+}
+.magicInput{
+	display: block;
+	margin: 10px auto;
+	min-width: 290px;
+	border-radius: 10px;
+	outline: none;
+	padding: 10px;
+	font-size: 20px;
+}
+main{
+	padding:5% ;
+}
+.main{
+	text-align: center;
+	margin: 5%;
+	.item{
+		display: inline-block;
+		max-width: 140px;
+		height: 230px;
+		text-align: center;
+		margin: 5px;
+		padding: 10px;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		cursor:pointer;
+		transition: all 500ms linear;
+		vertical-align: top;
+		position: relative;
+		transition: "all 1s linear";
+			button{
+				position: absolute;
+				bottom:5px; 
+				left:5px;
+				width: 90%;
+				margin: 0 auto;
+				border-radius: 5px;
+				background-color: green;
+				color:white;
+				cursor: pointer;
+
+			}
+		&:hover{
+			background: #fff;
+			color: #000;
+		}
+	}
+}	
+.footer{
+	border-top: 1px solid #000;
+	text-align: right;
+	p{
+		padding: 20px;
+		color: #fff;
+	}
+}
+@media screen and (max-width:420px){
+	main{
+		padding: 5% 0;
+		.main{
+			margin: 5% 0;
+			.item{
+				margin: 1%;
+			}
+		}
+	}
+	.magicInput{
+		margin: 0 auto;
+		min-width: 280px;
+	}
+}
